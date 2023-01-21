@@ -1,5 +1,5 @@
-import {Injectable} from '@nestjs/common';
-import {User} from "./user";
+import { Injectable } from '@nestjs/common';
+import { User } from './user';
 
 @Injectable()
 export class AppService {
@@ -8,6 +8,6 @@ export class AppService {
   }
   getUser(id: number) {
     //TODO: get data from db
-    return new User(id, 'vova')
+    return new User(id, 'vova');
   }
 }

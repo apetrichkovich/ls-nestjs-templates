@@ -1,6 +1,6 @@
-import {Controller, Get, Param} from '@nestjs/common';
-import {AppService} from './app.service';
-import {User} from './user';
+import { Controller, Get, Param } from '@nestjs/common';
+import { AppService } from './app.service';
+import { User } from './user';
 
 @Controller()
 export class AppController {
@@ -13,7 +13,6 @@ export class AppController {
 
   @Get('/users/:id')
   getUser(@Param() params): User {
-    return this.appService.getUser(params.id)
+    return this.appService.getUser(params.id);
   }
-
 }
